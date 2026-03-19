@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Ignore raw/large hero videos
+public/hero-video.mp4
+public/hero-video-rotated*.mp4

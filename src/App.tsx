@@ -166,10 +166,10 @@ export default function App() {
               muted
               playsInline
               className="w-full h-full object-cover object-center opacity-80"
-              src="/hero-video.mp4"
+              src="/hero-video-compressed.mp4"
             ></video>
-            {/* Horizontal gradient overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cream/80 via-cream/40 to-cream/80 backdrop-blur-[1px]"></div>
+            {/* Dark overlay to ensure text readability against video */}
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
 
           {/* Radial Glow */}
@@ -183,17 +183,17 @@ export default function App() {
               className="mb-8 relative inline-block"
             >
               {/* Animated Cup & Steam */}
-              <div className="relative w-16 h-16 mx-auto mb-6 text-terracotta">
+              <div className="relative w-16 h-16 mx-auto mb-6 text-amber">
                 <svg className="absolute -top-8 left-1/2 -translate-x-1/2 w-8 h-8 text-amber/60 steam-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 2v4"/><path d="M12 2v4"/><path d="M16 2v4"/></svg>
                 <Coffee size={64} strokeWidth={1.5} />
               </div>
               
-              <h1 className="text-6xl md:text-8xl font-serif mb-4">
+              <h1 className="text-6xl md:text-8xl font-serif mb-4 text-white drop-shadow-md">
                 chai<span className="italic text-amber">Aum</span>
               </h1>
-              <div className="w-24 h-px bg-terracotta/30 mx-auto mb-6"></div>
-              <p className="text-2xl md:text-3xl font-serif italic text-terracotta mb-2">"Sip. Breathe. Be."</p>
-              <p className="text-sm md:text-base tracking-widest uppercase opacity-70">Tri-Valley's 1st Authentic Chai Café</p>
+              <div className="w-24 h-px bg-amber/50 mx-auto mb-6"></div>
+              <p className="text-2xl md:text-3xl font-serif italic text-white drop-shadow-md mb-2">"Sip. Breathe. Be."</p>
+              <p className="text-sm md:text-base tracking-widest uppercase text-white/90 drop-shadow-md">Tri-Valley's 1st Authentic Chai Café</p>
             </motion.div>
 
             <motion.button
@@ -201,7 +201,7 @@ export default function App() {
               animate={{ opacity: isLoading ? 0 : 1 }}
               transition={{ delay: 1.8, duration: 0.6 }}
               onClick={() => scrollToSection('menu')}
-              className="mt-8 px-8 py-3 border border-bark hover:bg-bark hover:text-cream transition-all duration-300 text-sm tracking-widest uppercase flex items-center mx-auto group"
+              className="mt-8 px-8 py-3 border border-white/80 text-white hover:bg-white hover:text-bark transition-all duration-300 text-sm tracking-widest uppercase flex items-center mx-auto group"
             >
               Explore the Menu
               <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
