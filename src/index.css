@@ -4,10 +4,10 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Jost", sans-serif;
   
-  --color-cream: #F5EFE0;
-  --color-terracotta: #9B4E2C;
-  --color-amber: #C4832A;
-  --color-bark: #3D2214;
+  --color-cream: #F1EDE4;
+  --color-terracotta: #A87C65;
+  --color-amber: #6B7A58;
+  --color-bark: #43362E;
 }
 
 body {
@@ -75,4 +75,13 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-amber);
+}
+
+/* Neon Glow utilities */
+.neon-glow-text {
+  text-shadow: 0 0 10px rgba(100, 255, 140, 0.6), 0 0 20px rgba(100, 255, 140, 0.4), 0 0 40px rgba(100, 255, 140, 0.2);
+}
+
+.neon-glow-svg {
+  filter: drop-shadow(0 0 10px rgba(100, 255, 140, 0.6)) drop-shadow(0 0 20px rgba(100, 255, 140, 0.4));
 }

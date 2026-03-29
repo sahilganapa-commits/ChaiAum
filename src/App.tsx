@@ -182,18 +182,35 @@ export default function App() {
               transition={{ delay: 1.4, duration: 0.6 }}
               className="mb-8 relative inline-block"
             >
-              {/* Animated Cup & Steam */}
-              <div className="relative w-16 h-16 mx-auto mb-6 text-amber">
-                <svg className="absolute -top-8 left-1/2 -translate-x-1/2 w-8 h-8 text-amber/60 steam-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 2v4"/><path d="M12 2v4"/><path d="M16 2v4"/></svg>
-                <Coffee size={64} strokeWidth={1.5} />
+              {/* Leaf Logo SVG */}
+              <div className="relative w-32 h-32 mx-auto mb-6 text-white neon-glow-svg">
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  {/* Outer Arc */}
+                  <path d="M 15 78 A 40 40 0 1 1 85 78" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                  
+                  <g fill="#182A24" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round">
+                    {/* Left Leaf */}
+                    <path d="M 0 0 Q -14 -26 0 -52 Q 14 -26 0 0 Z" transform="translate(43.5, 79) rotate(-32)" />
+                    
+                    {/* Right Leaf */}
+                    <path d="M 0 0 Q -14 -26 0 -52 Q 14 -26 0 0 Z" transform="translate(56.5, 79) rotate(32)" />
+                    
+                    {/* Center Leaf */}
+                    <path d="M 0 0 Q -16.8 -31.2 0 -62.4 Q 16.8 -31.2 0 0 Z" transform="translate(50, 81)" />
+                  </g>
+
+                  {/* Bottom wavy line */}
+                  <path d="M 10 85 Q 35 77 50 82 T 90 77" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                </svg>
               </div>
               
-              <h1 className="text-6xl md:text-8xl font-serif mb-4 text-white drop-shadow-md">
-                chai<span className="italic text-amber">Aum</span>
+              <h1 className="text-[5.5rem] md:text-[8rem] font-serif mb-4 text-white tracking-tight neon-glow-text leading-none">
+                chai<span className="italic">Aum</span>
               </h1>
-              <div className="w-24 h-px bg-amber/50 mx-auto mb-6"></div>
-              <p className="text-2xl md:text-3xl font-serif italic text-white drop-shadow-md mb-2">"Sip. Breathe. Be."</p>
-              <p className="text-sm md:text-base tracking-widest uppercase text-white/90 drop-shadow-md">Tri-Valley's 1st Authentic Chai Café</p>
+              
+              <p className="text-2xl md:text-3xl font-serif text-white tracking-widest neon-glow-text mb-4 mt-2">
+                Tea & Coffee
+              </p>
             </motion.div>
 
             <motion.button
@@ -415,7 +432,7 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-[#2a170d] text-cream/50 py-8 text-center text-sm">
+        <footer className="bg-[#362C25] text-cream/50 py-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} chaiAum Café. All rights reserved.</p>
         </footer>
       </main>
