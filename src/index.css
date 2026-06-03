@@ -85,3 +85,17 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .neon-glow-svg {
   filter: drop-shadow(0 0 10px rgba(100, 255, 140, 0.6)) drop-shadow(0 0 20px rgba(100, 255, 140, 0.4));
 }
+
+/* ChaiAum wordmark — gold letters with green outline, matching logo.png */
+.logo-wordmark {
+  font-family: "Rye", serif;
+  color: #D4A52A;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #46583B;
+  text-shadow:
+    -1px -1px 0 #46583B,
+    1px -1px 0 #46583B,
+    -1px 1px 0 #46583B,
+    1px 1px 0 #46583B,
+    2px 3px 4px rgba(0, 0, 0, 0.35);
+}
