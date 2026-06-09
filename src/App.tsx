@@ -330,6 +330,20 @@ export default function App() {
           </div>
         </section>
 
+        {/* SECTION: Seasonal Specials */}
+        <section id="seasonal" className="py-20 px-6 bg-cream">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-serif mb-3">Try Our Seasonal Specials</h2>
+            <div className="w-16 h-px bg-amber mx-auto mb-4"></div>
+            <p className="text-sm opacity-80 mb-10">Refreshingly yours — here for a limited time.</p>
+            <img
+              src="/summer-specials.png"
+              alt="ChaiAum Summer seasonal specials menu"
+              className="w-full max-w-sm mx-auto rounded-sm shadow-lg"
+            />
+          </div>
+        </section>
+
         {/* SECTION: Other Services */}
         <section id="services" className="py-24 px-6 bg-white/50">
           <div className="max-w-5xl mx-auto text-center">
@@ -415,6 +429,33 @@ export default function App() {
           </div>
         </section>
 
+        {/* SECTION: Photo Gallery */}
+        <section id="gallery" className="py-16 px-6 bg-white/50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-4xl md:text-5xl font-serif mb-4">Step Inside</h2>
+              <div className="w-16 h-px bg-amber mx-auto"></div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <img
+                src="/cafe-interior-1.png"
+                alt="ChaiAum neon sign and lounge seating"
+                className="w-full h-72 md:h-80 object-cover rounded-sm shadow-md"
+              />
+              <img
+                src="/cafe-interior-3.png"
+                alt="ChaiAum café seating with gallery wall of framed art"
+                className="w-full h-72 md:h-80 object-cover rounded-sm shadow-md"
+              />
+              <img
+                src="/cafe-interior-2.png"
+                alt="ChaiAum décor shelf and counter"
+                className="w-full h-72 md:h-80 object-cover rounded-sm shadow-md"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* SECTION 4: Contact */}
         <section id="reviews" className="pb-24 bg-bark text-cream">
           {/* Reviews - Full Width Band */}
@@ -481,13 +522,24 @@ export default function App() {
           </div>
 
           {/* Events & Happenings */}
-          <div id="events" className="max-w-6xl mx-auto px-6 mb-24 scroll-mt-28">
-            <div className="text-center mb-16">
+          <div id="events" className="max-w-6xl mx-auto px-6 mb-16 scroll-mt-28">
+            <div className="text-center mb-10">
               <h2 className="text-4xl md:text-5xl font-serif mb-4 text-amber">Events & Happenings</h2>
               <div className="w-16 h-px bg-terracotta/50 mx-auto"></div>
             </div>
-            <div className="space-y-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="space-y-4">
+              {/* Portrait flyers row */}
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+                <img
+                  src="/floral-sculpture.png"
+                  alt="Floral Sculpture Workshop event flyer"
+                  className="w-full rounded-sm shadow-lg"
+                />
+                <img
+                  src="/refinishing-workshop.png"
+                  alt="Furniture Refinishing Workshop event flyer"
+                  className="w-full rounded-sm shadow-lg"
+                />
                 <img
                   src="/handmade-jewellery.jpeg"
                   alt="Handmade Jewellery event flyer"
@@ -499,10 +551,11 @@ export default function App() {
                   className="w-full rounded-sm shadow-lg"
                 />
               </div>
+              {/* Landscape banner */}
               <img
                 src="/milpitas-banner.png"
-                alt="ChaiAum Milpitas event banner"
-                className="w-4/5 mx-auto block rounded-sm shadow-lg"
+                alt="ChaiAum Navaratri / Milpitas event banner"
+                className="w-full sm:w-1/2 mx-auto block rounded-sm shadow-lg"
               />
             </div>
           </div>
