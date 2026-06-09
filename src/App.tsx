@@ -529,7 +529,7 @@ export default function App() {
             </div>
             <div className="space-y-4">
               {/* Portrait flyers row */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 items-start max-w-4xl mx-auto">
                 <img
                   src="/floral-sculpture.png"
                   alt="Floral Sculpture Workshop event flyer"
@@ -538,11 +538,6 @@ export default function App() {
                 <img
                   src="/refinishing-workshop.png"
                   alt="Furniture Refinishing Workshop event flyer"
-                  className="w-full rounded-sm shadow-lg"
-                />
-                <img
-                  src="/handmade-jewellery.jpeg"
-                  alt="Handmade Jewellery event flyer"
                   className="w-full rounded-sm shadow-lg"
                 />
                 <img
